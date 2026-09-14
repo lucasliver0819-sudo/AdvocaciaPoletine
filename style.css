@@ -1,3 +1,4 @@
+
 /* =========================================================
    POLETINE ADVOCACIA
    DESIGN TOKENS
@@ -20,11 +21,13 @@
     --hairline: rgba(17,17,17,.13);
     --hairline-on-dark: rgba(247,245,240,.18);
 
-    --serif: 'Cormorant Garamond',
+    --serif:
+        'Cormorant Garamond',
         'Times New Roman',
         serif;
 
-    --sans: 'Manrope',
+    --sans:
+        'Manrope',
         -apple-system,
         BlinkMacSystemFont,
         sans-serif;
@@ -54,15 +57,12 @@ html {
 }
 
 body {
-
     margin: 0;
 
     background: var(--ivory);
-
     color: var(--ink);
 
     font-family: var(--sans);
-
     font-weight: 400;
 
     -webkit-font-smoothing: antialiased;
@@ -71,51 +71,36 @@ body {
 }
 
 img {
-
     max-width: 100%;
-
     display: block;
 }
 
 a {
-
     color: inherit;
-
     text-decoration: none;
 }
 
 button {
-
     font: inherit;
-
     background: none;
-
     border: none;
-
     padding: 0;
-
     cursor: pointer;
-
     color: inherit;
 }
 
 ul {
-
     list-style: none;
-
     margin: 0;
-
     padding: 0;
 }
 
 h1,
 h2,
 h3 {
-
     margin: 0;
 
     font-family: var(--serif);
-
     font-weight: 500;
 
     letter-spacing: -.01em;
@@ -131,22 +116,16 @@ p {
 ========================================================= */
 
 :focus-visible {
-
     outline: 2px solid var(--gold);
-
     outline-offset: 3px;
 }
 
 .skip-link {
-
     position: absolute;
-
     left: -999px;
-
     top: 0;
 
     background: var(--ink);
-
     color: var(--ivory);
 
     padding: 12px 20px;
@@ -155,9 +134,7 @@ p {
 }
 
 .skip-link:focus {
-
     left: 16px;
-
     top: 16px;
 }
 
@@ -171,7 +148,6 @@ p {
     font-family: var(--sans);
 
     font-size: 12px;
-
     font-weight: 600;
 
     letter-spacing: .18em;
@@ -189,7 +165,6 @@ p {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 10px;
@@ -197,7 +172,6 @@ p {
     padding: 15px 30px;
 
     font-size: 13px;
-
     font-weight: 600;
 
     letter-spacing: .06em;
@@ -218,7 +192,6 @@ p {
 .btn--light {
 
     background: var(--ivory);
-
     color: var(--ink);
 
     border-color: var(--ivory);
@@ -227,7 +200,6 @@ p {
 .btn--light:hover {
 
     background: transparent;
-
     color: var(--ivory);
 }
 
@@ -235,7 +207,6 @@ p {
 .btn--ghost {
 
     border-color: currentColor;
-
     color: inherit;
 }
 
@@ -319,7 +290,6 @@ p {
     position: absolute;
 
     left: 0;
-
     right: 0;
 
     bottom: 0;
@@ -360,16 +330,9 @@ p {
     background: var(--ivory-deep);
 }
 
-
-/*
-    IMPORTANTE:
-    Sem borda na imagem principal.
-*/
-
 .photo-frame img {
 
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
@@ -457,7 +420,6 @@ p {
     background: rgba(247,245,240,.92);
 
     -webkit-backdrop-filter: blur(10px);
-
     backdrop-filter: blur(10px);
 
     padding-top: 14px;
@@ -530,7 +492,6 @@ p {
     position: absolute;
 
     left: 0;
-
     right: 0;
 
     bottom: 0;
@@ -564,7 +525,6 @@ p {
 .menu-toggle {
 
     width: 34px;
-
     height: 22px;
 
     display: flex;
@@ -581,7 +541,6 @@ p {
     display: block;
 
     height: 1px;
-
     width: 100%;
 
     background: currentColor;
@@ -591,22 +550,19 @@ p {
         opacity .3s var(--ease);
 }
 
-.menu-toggle[aria-expanded="true"]
-span:nth-child(1) {
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
 
     transform:
         translateY(9.5px)
         rotate(45deg);
 }
 
-.menu-toggle[aria-expanded="true"]
-span:nth-child(2) {
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
 
     opacity: 0;
 }
 
-.menu-toggle[aria-expanded="true"]
-span:nth-child(3) {
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
 
     transform:
         translateY(-9.5px)
@@ -696,7 +652,6 @@ span:nth-child(3) {
     overflow: hidden;
 }
 
-
 .hero__grid {
 
     max-width: var(--container);
@@ -711,7 +666,6 @@ span:nth-child(3) {
 
     gap: 56px;
 }
-
 
 .hero__title {
 
@@ -731,7 +685,6 @@ span:nth-child(3) {
     color: var(--gold);
 }
 
-
 .hero__support {
 
     font-size: clamp(16px, 1.5vw, 18px);
@@ -744,7 +697,6 @@ span:nth-child(3) {
 
     font-weight: 300;
 }
-
 
 .hero__actions {
 
@@ -762,18 +714,10 @@ span:nth-child(3) {
     color: var(--ivory);
 }
 
-
 .hero__media {
 
     position: relative;
 }
-
-
-/*
-    AQUI ESTÁ A CORREÇÃO DA BORDA.
-    Não existe mais:
-    border: 1px solid ...
-*/
 
 .hero__image {
 
@@ -783,7 +727,6 @@ span:nth-child(3) {
 
     border: none;
 }
-
 
 .hero__location {
 
@@ -833,11 +776,9 @@ span:nth-child(3) {
     position: absolute;
 
     top: 0;
-
     left: -2px;
 
     width: 5px;
-
     height: 5px;
 
     border-radius: 50%;
@@ -847,7 +788,6 @@ span:nth-child(3) {
     animation:
         scrollDot 2.6s ease-in-out infinite;
 }
-
 
 @keyframes scrollDot {
 
@@ -983,7 +923,6 @@ span:nth-child(3) {
     cursor: pointer;
 }
 
-
 .area__row {
 
     display: flex;
@@ -994,7 +933,6 @@ span:nth-child(3) {
 
     padding-bottom: 24px;
 }
-
 
 .area__num {
 
@@ -1014,7 +952,6 @@ span:nth-child(3) {
     flex-shrink: 0;
 }
 
-
 .area__name {
 
     font-family: var(--serif);
@@ -1030,13 +967,11 @@ span:nth-child(3) {
     flex: 1;
 }
 
-
 .area__plus {
 
     position: relative;
 
     width: 16px;
-
     height: 16px;
 
     flex-shrink: 0;
@@ -1061,25 +996,20 @@ span:nth-child(3) {
 .area__plus::before {
 
     left: 0;
-
     top: 7px;
 
     width: 16px;
-
     height: 1px;
 }
 
 .area__plus::after {
 
     left: 7px;
-
     top: 0;
 
     width: 1px;
-
     height: 16px;
 }
-
 
 .area__line {
 
@@ -1094,7 +1024,6 @@ span:nth-child(3) {
     transition:
         width .5s var(--ease);
 }
-
 
 .area__desc {
 
@@ -1127,13 +1056,11 @@ span:nth-child(3) {
     color: var(--gold);
 }
 
-
 .area:hover .area__name,
 .area.is-open .area__name {
 
     transform: translateX(10px);
 }
-
 
 .area:hover .area__line,
 .area.is-open .area__line {
@@ -1141,14 +1068,12 @@ span:nth-child(3) {
     width: 100%;
 }
 
-
 .area.is-open .area__plus::after {
 
     transform: rotate(90deg);
 
     opacity: 0;
 }
-
 
 .area.is-open .area__desc {
 
@@ -1218,14 +1143,12 @@ span:nth-child(3) {
     border: 1px solid var(--hairline);
 }
 
-
 .method__item {
 
     background: var(--ivory-deep);
 
     padding: 44px 34px;
 }
-
 
 .method__num {
 
@@ -1240,14 +1163,12 @@ span:nth-child(3) {
     margin-bottom: 26px;
 }
 
-
 .method__item h3 {
 
     font-size: 26px;
 
     margin-bottom: 14px;
 }
-
 
 .method__item p {
 
@@ -1293,14 +1214,12 @@ span:nth-child(3) {
     padding-bottom: 26px;
 }
 
-
 .ph--main {
 
     aspect-ratio: 4 / 5;
 
     width: 82%;
 }
-
 
 .ph--overlap {
 
@@ -1316,7 +1235,6 @@ span:nth-child(3) {
 
     border: 6px solid var(--ivory);
 }
-
 
 .office__tag {
 
@@ -1347,7 +1265,6 @@ span:nth-child(3) {
     max-width: 16ch;
 }
 
-
 .office__points {
 
     display: flex;
@@ -1356,7 +1273,6 @@ span:nth-child(3) {
 
     gap: 16px;
 }
-
 
 .office__points li {
 
@@ -1370,7 +1286,6 @@ span:nth-child(3) {
 
     line-height: 1.6;
 }
-
 
 .office__points li::before {
 
@@ -1405,12 +1320,10 @@ span:nth-child(3) {
     text-align: center;
 }
 
-
 .reviews__head {
 
     margin-bottom: 64px;
 }
-
 
 .reviews__title {
 
@@ -1420,7 +1333,6 @@ span:nth-child(3) {
 
     font-size: clamp(34px, 4vw, 48px);
 }
-
 
 .reviews__count {
 
@@ -1437,7 +1349,6 @@ span:nth-child(3) {
     color: var(--gray);
 }
 
-
 .reviews__grid {
 
     max-width: var(--container);
@@ -1451,7 +1362,6 @@ span:nth-child(3) {
     gap: 40px;
 }
 
-
 .review p {
 
     font-family: var(--serif);
@@ -1463,6 +1373,136 @@ span:nth-child(3) {
     line-height: 1.5;
 
     color: var(--ink-soft);
+}
+
+
+/* =========================================================
+   LINKEDIN
+========================================================= */
+
+.linkedin {
+
+    padding:
+        var(--section-y)
+        var(--pad);
+
+    background: var(--ivory-deep);
+
+    border-top: 1px solid var(--hairline);
+}
+
+.linkedin__inner {
+
+    max-width: var(--container);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.linkedin__content {
+
+    max-width: 680px;
+}
+
+.linkedin__content h2 {
+
+    font-size: clamp(34px, 5vw, 58px);
+
+    line-height: 1.08;
+
+    max-width: 15ch;
+
+    margin-bottom: 24px;
+}
+
+.linkedin__content p:not(.eyebrow) {
+
+    color: var(--gray);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    max-width: 48ch;
+
+    margin-bottom: 32px;
+}
+
+.linkedin__content .btn {
+
+    display: inline-flex;
+}
+
+.linkedin__content .btn span {
+
+    font-size: 18px;
+
+    transition:
+        transform .3s var(--ease);
+}
+
+.linkedin__content .btn:hover span {
+
+    transform: translateX(5px);
+}
+
+
+.linkedin__side {
+
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid var(--hairline);
+
+    background: var(--ivory);
+
+    text-align: center;
+}
+
+.linkedin__symbol {
+
+    width: 82px;
+    height: 82px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--gold);
+
+    font-family: var(--sans);
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: var(--gold);
+
+    margin-bottom: 28px;
+}
+
+.linkedin__name {
+
+    font-family: var(--serif);
+
+    font-size: 28px;
+
+    line-height: 1.15;
 }
 
 
@@ -1483,7 +1523,6 @@ span:nth-child(3) {
     text-align: center;
 }
 
-
 .cta__inner {
 
     max-width: 760px;
@@ -1499,14 +1538,12 @@ span:nth-child(3) {
     gap: 26px;
 }
 
-
 .cta__inner h2 {
 
     font-size: clamp(32px, 5vw, 54px);
 
     line-height: 1.12;
 }
-
 
 .cta__inner p {
 
@@ -1516,7 +1553,6 @@ span:nth-child(3) {
 
     max-width: 42ch;
 }
-
 
 .cta__loc {
 
@@ -1547,7 +1583,6 @@ span:nth-child(3) {
     position: relative;
 }
 
-
 .contact__grid {
 
     max-width: var(--container);
@@ -1561,14 +1596,12 @@ span:nth-child(3) {
     gap: 44px;
 }
 
-
 .contact__brand {
 
     font-size: clamp(30px, 4vw, 44px);
 
     margin-top: 4px;
 }
-
 
 .contact__col h3 {
 
@@ -1587,12 +1620,10 @@ span:nth-child(3) {
     font-weight: 600;
 }
 
-
 .contact__col h3.mt {
 
     margin-top: 26px;
 }
-
 
 .contact__col p {
 
@@ -1605,12 +1636,19 @@ span:nth-child(3) {
     margin-bottom: 16px;
 }
 
-
 .contact__col p a {
 
     color: var(--ink);
 
     font-weight: 600;
+
+    transition:
+        color .3s var(--ease);
+}
+
+.contact__col p a:hover {
+
+    color: var(--gold);
 }
 
 
@@ -1656,7 +1694,6 @@ span:nth-child(3) {
         color .3s var(--ease);
 }
 
-
 .whatsapp:hover {
 
     background: var(--gold);
@@ -1665,7 +1702,6 @@ span:nth-child(3) {
 
     color: var(--ink);
 }
-
 
 .whatsapp span {
 
@@ -1687,7 +1723,6 @@ span:nth-child(3) {
         56px var(--pad) 40px;
 }
 
-
 .footer__inner {
 
     max-width: var(--container);
@@ -1701,7 +1736,6 @@ span:nth-child(3) {
     gap: 34px;
 }
 
-
 .footer__brand {
 
     display: flex;
@@ -1711,17 +1745,14 @@ span:nth-child(3) {
     color: var(--ivory);
 }
 
-
 .footer__brand .brand__name {
 
     font-size: 19px;
 }
 
-
 .footer__seal {
 
     width: 40px;
-
     height: 40px;
 
     object-fit: cover;
@@ -1735,7 +1766,6 @@ span:nth-child(3) {
     filter: grayscale(.15);
 }
 
-
 .footer__nav {
 
     display: flex;
@@ -1747,12 +1777,16 @@ span:nth-child(3) {
     font-size: 13.5px;
 }
 
+.footer__nav a {
+
+    transition:
+        color .3s var(--ease);
+}
 
 .footer__nav a:hover {
 
     color: var(--ivory);
 }
-
 
 .footer__meta {
 
@@ -1783,7 +1817,6 @@ span:nth-child(3) {
     .whatsapp span {
         display: inline;
     }
-
 }
 
 
@@ -1810,7 +1843,6 @@ span:nth-child(3) {
 
         text-align: right;
     }
-
 }
 
 
@@ -1843,7 +1875,6 @@ span:nth-child(3) {
 
         gap: 56px;
     }
-
 }
 
 
@@ -1866,6 +1897,18 @@ span:nth-child(3) {
         gap: 60px;
     }
 
+
+    .linkedin__inner {
+
+        grid-template-columns: 1.1fr .9fr;
+
+        gap: 100px;
+    }
+
+    .linkedin__side {
+
+        min-height: 360px;
+    }
 }
 
 
@@ -1906,7 +1949,6 @@ span:nth-child(3) {
 
         padding-bottom: 60px;
     }
-
 }
 
 
@@ -1916,7 +1958,6 @@ span:nth-child(3) {
 
         gap: 80px;
     }
-
 }
 
 
@@ -1938,5 +1979,4 @@ span:nth-child(3) {
 
         scroll-behavior: auto !important;
     }
-
 }
